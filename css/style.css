@@ -35,7 +35,7 @@ nav a {
 
 /***********************  Footer Section   **************************/
 footer {
-	display: flex;
+  display: flex;
   justify-content: center;
   padding: 10px;
 
@@ -98,7 +98,7 @@ hr {
 }
 
 section h2 {
-  margin: 10px 5%;
+  margin: 10px 20%;
   font-family: "Roboto Slab", serif;
   color: #003049;
 }
@@ -108,14 +108,14 @@ section dl {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
-  margin: 10px 10%;
+  margin: 10px 20%;
 
   font-family: "Source Sans 3", sans-serif;
   color: #F7F2EB;
 }
 
 section ul {
-  margin: 10px 10%;
+  margin: 10px 20%;
   
   font-family: "Source Sans 3", sans-serif;
   color: #F7F2EB;
@@ -132,7 +132,7 @@ section a:hover {
 
 /**************   Projects   *****************/
 .three-col {
-  margin: 0 10% 100px 10%;
+  margin: 0 10% 100px 20%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
