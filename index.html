@@ -6,34 +6,50 @@
     
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <title>Kaitlin Ros</title>
 </head>
 <body>
+    <!--NAV-->
     <nav>
-        <p>Kaitlin Ros</p>
-        <p><a href="contact.html">Contact Kaitlin Ros</a></p>
+        <div class="nav-container">
+            <img src="assets/nav-glass.svg" class="nav-background" alt="">
+            <div src="assets/nav-glass.svg" class="nav-rect">
+                <p>Kaitlin Ros</p>
+                <p><a href="contact.html">Contact Kaitlin</a></p>
+            </div>
+        </div>
     </nav>
 
-    <header>
-        <h1>Kaitlin Ros</h1>
-        <img src="images/kaitlin-headshot.jpg" alt="Kaitlin Ros Headshot" width="200"/>
-    </header>
-    <p class="address">Atlanta, GA &bull; (678) 373-6807 &bull; karos1774@gmail.com</p>
 
-    <p class="tagline">
-        My name is Kaitlin Ros, and I am a current Computer Science major at the 
-        University of Georgia. Whether I’m coding in Java or crafting 3D models in 
-        Blender, I love transforming ideas into interactive, visually compelling results.
-        My main interests include software development, artificial intelligence, game
-        development, and audio development!
-    </p>
+    <!--HEADER-->
+    <header>
+        <div class="headshot">
+            <img src="images/kaitlin-headshot.jpg" alt="Kaitlin Ros Headshot" width="200"/>
+        </div>
+
+        <div class="personal-info">
+            <h1>Kaitlin Ros</h1>
+            <p class="address">Atlanta, GA &bull; (678) 373-6807 &bull; karos1774@gmail.com</p>
+            <p class="tagline">
+                My name is Kaitlin Ros, and I am a current Computer Science major at the 
+                University of Georgia. Whether I’m coding in Java or crafting 3D models in 
+                Blender, I love transforming ideas into interactive, visually compelling results.
+                My main interests include software development, artificial intelligence, game
+                development, and audio development!
+            </p>
+        </div>
+    </header>
+    
 
     <hr>
 
+
+    <!--EDUCATION SECTION-->
     <section>
         <h2>Education</h2>
         <dl>
@@ -55,6 +71,7 @@
         </dl>
     </section>
 
+    <!--SKILLS SECTION-->
     <section>
         <h2>Skills</h2>
         <ul>
@@ -66,6 +83,7 @@
         </ul>
     </section>
 
+    <!--LEADERSHIP AND EXPERIENCE SECTION-->
     <section>
         <h2>Leadership and Experience</h2>
         <dl>
@@ -78,6 +96,7 @@
         </dl>
     </section>
 
+    <!--PROJECTS SECTION-->
     <section>
         <h2>Projects</h2>
             <div class="three-col">
@@ -111,6 +130,8 @@
         </div>
     </section>
 
+
+    <!--FOOTER-->
     <footer>
         &copy;
         <a href="contact.html">Kaitlin Ros</a>

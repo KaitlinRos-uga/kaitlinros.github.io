@@ -14,23 +14,51 @@
 
 body {
   margin: 0;
-  background-color: #669BBC;
+  background-color: #0A1123;
 }
 
 /****************   Nav Section **********************/
 nav {
+  width: 100%;
+  height: 50px; 
+  box-sizing: border-box;
   display: flex; 
-  justify-content: space-between; 
-  padding: 0 10px;
-
-  background-color: #003049;
-  color: #F7F2EB;  
-  font-family: "Roboto Slab", serif;
+  justify-content: center; 
 }
 
-nav a {
+.nav-container {
+  width: 75%;
+  position: relative;
+}
+
+.nav-background {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+.nav-rect {
+  position: absolute;
+  inset: 0;
+    
+  width: 100%;
+  height: 100%;  
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: Orbit; 
+  color: #F2FAFF; 
+}
+
+.nav-rect p {
+  margin: 5%;
+}
+
+.nav-rect a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: inherit;
 }
 
 /***********************  Footer Section   **************************/
@@ -38,10 +66,9 @@ footer {
   display: flex;
   justify-content: center;
   padding: 10px;
-
-  background-color: #003049; 
-  color: #F7F2EB; 
-  font-family: "Roboto Slab", serif;
+ 
+  font-family: Orbit;
+  color: #F2FAFF; 
 }
 
 footer a {
@@ -53,54 +80,67 @@ footer a {
 
 /*********** Splash Page ************************/
 header {
+  width: 75%;
+  margin: 50px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.headshot {
+  width: 50%; 
   display: flex;
   justify-content: center;
-  align-items: center; 
-  flex-direction: column-reverse;
-  padding: 50px 0 10px 0; 
-
-  background-color: #FDF0D5;
+  align-items: center;
 }
 
-header h1 {
-  color: #003049; 
-  font-family: "Roboto Slab", serif;
+.headshot img {
+  width: 50%; 
+  border: 5px solid #F2FAFF; 
+  border-radius: 50%;
 }
 
-header img {
-  border: 5px dashed #c1121f; 
-  border-radius: 50%
+.personal-info {
+  width: 50%;
+  display: flex; 
+  flex-direction: column;
+
+  font-family: Orbit;
+  font-weight: 400;
 }
 
-.address {
-  justify-self: center;
-
-  font-family: "Roboto Slab", serif;
-  color: #F7F2EB;
+.personal-info h1 {
+  color: #F2FAFF;
+  font-size: 64px;
+  line-height: 100%;
 }
 
-.tagline {
-  justify-self: center;
-  text-align: center;
-  width: 75%; 
+.personal-info .address {
+  color: #5383FF;
+  font-size: 20px;
+  margin-top: -25px; 
+}
 
-  font-family: "Source Sans 3", sans-serif;
-  color: #F7F2EB;
+.personal-info .tagline {
+  color: #f2faff;
+  font-family: Outfit;
+  font-size: 20px;
 }
 
 /************* Sections ********************/
 hr {
   border: none;
-  height: 2px;
-  background-color: #c1121f;
-  width: 75%;         
+  width: 75%;
+  height: 3px;
   margin: 2rem auto; 
+  background: linear-gradient(90deg, rgba(242, 250, 255, 0.00) 0%, #F2FAFF 50%, rgba(242, 250, 255, 0.00) 100%);
 }
 
 section h2 {
   margin: 10px 20%;
-  font-family: "Roboto Slab", serif;
-  color: #003049;
+  font-family: Orbit;
+  color: #F2FAFF;
 }
 
 section dl {
@@ -110,15 +150,15 @@ section dl {
   justify-content: space-around;
   margin: 10px 20%;
 
-  font-family: "Source Sans 3", sans-serif;
-  color: #F7F2EB;
+  font-family: Outfit;
+  color: #F2FAFF;
 }
 
 section ul {
   margin: 10px 20%;
   
-  font-family: "Source Sans 3", sans-serif;
-  color: #F7F2EB;
+  font-family: Outfit;
+  color: #F2FAFF;
 }
 
 section a {
@@ -180,11 +220,38 @@ section a:hover {
 }
 
 /**************   Contact Page   *****************/
-.one-col {
+.contact-content {
+  width: 75%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  width: 50%; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Roboto Slab", serif;
+  font-family: Orbit;
+}
+
+.contact-info h1 {
+  color: #F2FAFF;
+}
+
+.contact-info p {
+  color: #5383FF;
+}
+
+.one-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Outfit;
+  color: #F2FAFF;
 }
 
 input {
