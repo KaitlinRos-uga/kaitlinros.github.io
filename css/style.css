@@ -147,10 +147,14 @@ section a:hover {
 
 .card img {
   display: flex;
+  width: 80%; 
+  height: auto;
   justify-self: center;
 }
 
 .card ul {
+  width: 80%;
+  margin-left: -5%;
   color: #003049; 
 }
 
