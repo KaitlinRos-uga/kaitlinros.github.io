@@ -14,7 +14,7 @@
 
 body {
   margin: 0;
-  background-color: #669BBC;
+  background-color: #5d839b;
 }
 
 /****************   Nav Section **********************/
@@ -82,7 +82,7 @@ header img {
 .tagline {
   justify-self: center;
   text-align: center;
-  width: 75%; 
+  width: 60%; 
 
   font-family: "Source Sans 3", sans-serif;
   color: #F7F2EB;
